@@ -1,0 +1,1 @@
+Nombres = new Mongo.Collection('nombres');

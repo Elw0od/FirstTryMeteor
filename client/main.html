@@ -1,0 +1,28 @@
+<head>
+  <title>FirstTryMeteor</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+  {{> list_nombre}}
+
+</body>
+
+<template name="hello">
+  <h2>{{title}}</h2>
+  <button class="normal">Click Me</button>
+  <button class="special">Click Special</button>
+  <p>You've pressed the button {{counter}} times.</p>
+
+  <br>
+  <button class="save-number">Save numbers</button>
+</template>
+
+<template name="list_nombre">
+  <h2>Liste des nombres</h2>
+ {{ #each nombre in nombres }}
+  {{ nombre.value }}
+ {{/each}}
+</template>
